@@ -9,9 +9,10 @@ CRUD Rest API in Python using Flask, Postgres, Docker
 - Now cd to the file your just downloaded.
 - Type `docker compose up -d flask_db` to run the container.
 - Use `docker ps -a` to check the status of the image.
-- Then download [Table Plus](https://tableplus.com/download) which is a tool to test the connection of postgreSQL connection and click connect.
-- Type `docker compose up --build flask_app` in the terminal to build then run the image and get it up on localhost.
-- Then let's build the image by typing `docker compose build` in the terminal , or we can just type 'docker compose up --build flask_app' to build and run.
+- Then download [Table Plus](https://tableplus.com/download) which is a tool to test the connection of postgreSQL connection.
+- Click on the plus button and choose PostgreSQL , now fill Host with `localhost` , Port with `5432` and (User,Password,Database) with `postgres`
+- Now click on test then connect.
+- Then let's build the image by typing `docker compose build` in the terminal , or we can just type `docker compose up --build flask_app` to build and run.
 - We can now visit `http://localhost:8000/persons` in any browser to check if it's working.
 - Now you should download [Postman](https://www.postman.com/downloads/) to try and test the API.
 - You can test first by choosing which method you want to use then typing `http://localhost:8000/persons` in the url then pressing send.
